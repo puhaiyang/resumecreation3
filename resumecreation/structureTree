@@ -1,0 +1,124 @@
+┣ 📂frontend
+┃ ┣ 📂admin
+┃ ┃ ┣ 📜adminhome.html
+┃ ┃ ┣ 📜AdminTemplateManagement.html
+┃ ┃ ┣ 📜AdminUserManagement.html
+┃ ┃ ┣ 📜charts.html
+┃ ┃ ┣ 📜layout-sidenav-light.html
+┃ ┃ ┣ 📜layout-static.html
+┃ ┃ ┣ 📜ResumeManagement.html
+┃ ┃ ┗ 📜tables.html
+┃ ┣ 📂assets
+┃ ┃ ┣ 📜401.html
+┃ ┃ ┣ 📜404.html
+┃ ┃ ┣ 📜500.html
+┃ ┃ ┣ 📜PrivatePolicy.html
+┃ ┃ ┗ 📜TermCondition.html
+┃ ┣ 📂resume
+┃ ┃ ┣ 📜ChooseTemplate.html
+┃ ┃ ┣ 📜ResumeEditor.html
+┃ ┃ ┣ 📜ResumeManagement.html
+┃ ┃ ┗ 📜TemplateDetails.html
+┃ ┣ 📂static
+┃ ┃ ┣ 📂css
+┃ ┃ ┃ ┣ 📜HomeNavBar.css
+┃ ┃ ┃ ┣ 📜homestyles.css
+┃ ┃ ┃ ┗ 📜styles.css
+┃ ┃ ┣ 📂html
+┃ ┃ ┃ ┣ 📜HomeBottomBar.html
+┃ ┃ ┃ ┗ 📜HomeNavBar.html
+┃ ┃ ┣ 📂img
+┃ ┃ ┃ ┣ 📜error-404-monochrome.svg
+┃ ┃ ┃ ┣ 📜favicon.ico
+┃ ┃ ┃ ┗ 📜logo.png
+┃ ┃ ┣ 📂js
+┃ ┃ ┃ ┣ 📜all.js
+┃ ┃ ┃ ┣ 📜homescripts.js
+┃ ┃ ┃ ┣ 📜main.js
+┃ ┃ ┃ ┗ 📜scripts.js
+┃ ┃ ┗ 📂plugins
+┃ ┃   ┗ 📂bootstrap-5.3.3
+┃ ┃     ┣ 📂css
+┃ ┃     ┃ ┣ 📜bootstrap-grid.css
+┃ ┃     ┃ ┣ 📜bootstrap-grid.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-grid.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-grid.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-grid.rtl.css
+┃ ┃     ┃ ┣ 📜bootstrap-grid.rtl.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-grid.rtl.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-grid.rtl.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.css
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.rtl.css
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.rtl.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.rtl.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-reboot.rtl.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.css
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.rtl.css
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.rtl.css.map
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.rtl.min.css
+┃ ┃     ┃ ┣ 📜bootstrap-utilities.rtl.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap.css
+┃ ┃     ┃ ┣ 📜bootstrap.css.map
+┃ ┃     ┃ ┣ 📜bootstrap.min.css
+┃ ┃     ┃ ┣ 📜bootstrap.min.css.map
+┃ ┃     ┃ ┣ 📜bootstrap.rtl.css
+┃ ┃     ┃ ┣ 📜bootstrap.rtl.css.map
+┃ ┃     ┃ ┣ 📜bootstrap.rtl.min.css
+┃ ┃     ┃ ┗ 📜bootstrap.rtl.min.css.map
+┃ ┃     ┣ 📂js
+┃ ┃     ┃ ┣ 📜bootstrap.bundle.js
+┃ ┃     ┃ ┣ 📜bootstrap.bundle.js.map
+┃ ┃     ┃ ┣ 📜bootstrap.bundle.min.js
+┃ ┃     ┃ ┣ 📜bootstrap.bundle.min.js.map
+┃ ┃     ┃ ┣ 📜bootstrap.esm.js
+┃ ┃     ┃ ┣ 📜bootstrap.esm.js.map
+┃ ┃     ┃ ┣ 📜bootstrap.esm.min.js
+┃ ┃     ┃ ┣ 📜bootstrap.esm.min.js.map
+┃ ┃     ┃ ┣ 📜bootstrap.js
+┃ ┃     ┃ ┣ 📜bootstrap.js.map
+┃ ┃     ┃ ┣ 📜bootstrap.min.js
+┃ ┃     ┃ ┗ 📜bootstrap.min.js.map
+┃ ┃     ┗ 📜.DS_Store
+┃ ┣ 📂user
+┃ ┃ ┣ 📜AccountDetails.html
+┃ ┃ ┣ 📜BackedUpArchivesPage.html
+┃ ┃ ┣ 📜PaymentMethod.html
+┃ ┃ ┣ 📜SecurityPage.html
+┃ ┃ ┣ 📜SettingPage.html
+┃ ┃ ┣ 📜UserHome.html
+┃ ┃ ┗ 📜UserProfile.html
+┃ ┣ 📜.DS_Store
+┃ ┣ 📜AboutUs.html
+┃ ┣ 📜FAQs.html
+┃ ┣ 📜index.html
+┃ ┣ 📜login.html
+┃ ┣ 📜password.html
+┃ ┣ 📜register.html
+┃ ┗ 📜resume.html
+┣ 📂ResumeCreation
+┃ ┣ 📂CVBuilder
+┃ ┃ ┣ 📂migrations
+┃ ┃ ┃ ┗ 📜__init__.py
+┃ ┃ ┣ 📜__init__.py
+┃ ┃ ┣ 📜admin.py
+┃ ┃ ┣ 📜apps.py
+┃ ┃ ┣ 📜models.py
+┃ ┃ ┣ 📜tests.py
+┃ ┃ ┗ 📜views.py
+┃ ┣ 📂ResumeCreation
+┃ ┃ ┣ 📜__init__.py
+┃ ┃ ┣ 📜asgi.py
+┃ ┃ ┣ 📜settings.py
+┃ ┃ ┣ 📜urls.py
+┃ ┃ ┗ 📜wsgi.py
+┃ ┗ 📜manage.py
+┣ 📜.DS_Store
+┣ 📜.gitignore
+┣ 📜LICENSE
+┗ 📜README.md

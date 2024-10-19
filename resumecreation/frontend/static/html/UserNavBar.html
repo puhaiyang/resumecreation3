@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-light " ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../static/img/logo.png" alt="Logo" style="width: 40px;"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resume
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
+                      <li><a class="dropdown-item" href="../resume/ChooseTemplate.html">Choose Template</a></li>
+                      <li><a class="dropdown-item" href="../resume/ResumeEditor.html">Edit Resume</a></li>
+                      <li><a class="dropdown-item" href="../resume/ResumeManagement.html">View Resume</a></li>
+                      <li><a class="dropdown-item" href="../resume/ResumeTemplateDetail.html">Template Details</a></li>
+                  </ul>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../FAQs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../AboutUs.html">About Us</a>
+                </li>
+            </ul>
+
+            <!-- 右边的用户相关按钮，使用 JavaScript 动态处理 -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="user-nav">
+                <!-- 默认显示未登录 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="authDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Login/Sign Up
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="authDropdown">
+                        <li><a class="dropdown-item" href="../login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="../register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // 示例：使用 JavaScript 检查用户是否已登录并更新导航栏
+    document.addEventListener("DOMContentLoaded", function() {
+        var userNav = document.getElementById('user-nav');
+
+        // 检查是否有登录状态 (这是一个伪代码, 实际项目中应通过 AJAX 或 Cookie 检查登录状态)
+        var isAuthenticated = false; // 假设未登录
+        var username = "User"; // 假设登录后获取用户名
+
+        if (isAuthenticated) {
+            userNav.innerHTML = `
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ${username}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="../user/UserHome.html">Home</a></li>
+                        <li><a class="dropdown-item" href="../user/UserProfile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="../user/Logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            `;
+        }
+    });
+</script>

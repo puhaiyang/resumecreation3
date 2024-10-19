@@ -1,0 +1,7 @@
+-- 一共6张表
+-- 1.user
+-- 2.Resume
+-- 3.Template
+-- 4.LoginRecord，记录登录信息
+-- 5.首页的消息反馈
+-- 6.

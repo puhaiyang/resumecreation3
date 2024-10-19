@@ -1,0 +1,194 @@
+/* Custom CSS for Navbar */
+.navbar {
+    position: fixed; /* 确保导航栏固定在页面顶部 */
+    top: 0;
+    height: 65px; /* 设置导航栏高度 */
+    width: 100%;
+    z-index: 1000; /* 确保导航栏在页面最上层 */
+    background-color: rgba(222, 222, 222, 1); /* 设置背景颜色并略微透明 */
+    box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.2); /* 添加阴影提升层次感 */
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin-bottom: 0; /* 移除可能的底部 margin */
+    padding-bottom: 0; /* 移除可能的 padding */
+}
+
+/* 确保内容不会被固定导航栏遮挡 */
+body {
+    padding-top: 50px; /* 与导航栏高度匹配，避免内容被导航栏遮挡 */
+    margin: 0;
+}
+
+header {
+    margin-top: 0;
+    padding-top: 80px; /* 确保内容从导航栏下方开始 */
+    background-color: #212529; /* 设定背景颜色 */
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand .logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    color: #555;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.navbar-nav.mx-auto {
+    flex: 1;
+    justify-content: center;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 80px; /* 根据顶部导航栏调整 */
+    left: 0;
+    width: 16.66%; /* 1/6 的宽度 */
+    height: calc(100vh - 150px); /* 调整为视口高度减去顶部导航栏高度 */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 当内容超出时，显示滚动条 */
+}
+
+.sidebar .list-group-item {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.sidebar .list-group-item i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.sidebar .list-group-item:hover i {
+    transform: scale(1.2);
+}
+/* bottom bar */
+
+.bottombar {
+    position: fixed-bottom;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(222, 222, 222, 1); /* 半透明效果 */
+    color: #333; /* 文字颜色 */
+
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 水平两边对齐 */
+    padding: 0 20px; /* 两侧增加间距 */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15); /* 上方投影效果 */
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.bottombar a {
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.3s ease; /* 平滑颜色过渡效果 */
+}
+
+.bottombar a:hover {
+    color: #0056b3; /* 鼠标悬停时链接颜色 */
+}
+
+.bottombar p {
+    margin: 0;
+    font-size: 14px;
+    flex: 1; /* 使文本在两侧均匀分布 */
+    text-align: justify; /* 使内容两端对齐 */
+}
+
+
+
+
+/* ======================================== */
+
+/* 主容器 */
+.container-fluid {
+    display: block; /* 使用 block 而不是 flex 以避免子元素问题 */
+}
+
+/* 卡片样式优化 */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* 按钮样式调整 */
+.btn-outline-secondary, .btn-outline-primary, button.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* 主内容区域设置 */
+#mainContent {
+    margin-left: 17%; /* 侧边栏的宽度保持一致 */
+    padding: 20px;
+    padding-top: 80px; /* 与导航栏高度一致 */
+    padding-bottom: 70px; /* 与底部栏高度一致 */
+}
+
+/* 响应式布局优化 */
+@media (max-width: 768px) {
+    #sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    #mainContent {
+        margin-left: 0;
+    }
+}
+

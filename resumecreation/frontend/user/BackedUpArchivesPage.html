@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backed Up Archives - Resume Builder</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/MainStyle.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+
+
+        .archives-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .archives-section h2 {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .archives-table {
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sidebar {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar .nav-link {
+            color: #343a40;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div id="navbar"></div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Account Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Payment Methods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Backed Up Archives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Security</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About & Claim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Backed Up Archives Section -->
+            <div class="col-md-9">
+                <div class="archives-section">
+                    <h2>Backed Up Archives</h2>
+                    <!-- Archive Table -->
+                    <div class="archives-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Filename</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-09-06</td>
+                                    <td>Resume_123.pdf</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-08-30</td>
+                                    <td>Resume_456.pdf</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="../static/js/UserMain.js"></script>
+</body>
+</html>

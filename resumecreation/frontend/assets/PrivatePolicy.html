@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harry" />
+    <title>Privacy Policy - Resume Generator</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="shttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Privacy Policy Page Container -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow p-4">
+                    <h2 class="text-center mb-4">Privacy Policy</h2>
+                    
+                    <!-- Privacy Policy Content -->
+                    <div class="policy-content mb-4" style="max-height: 400px; overflow-y: auto;">
+                        <h4>Introduction</h4>
+                        <p>
+                            Welcome to our Resume Generator service. Your privacy is critically important to us. 
+                            This Privacy Policy explains how we collect, use, and share your personal data when you use our service.
+                        </p>
+
+                        <h4>Information We Collect</h4>
+                        <p>
+                            We may collect the following information:
+                            <ul>
+                                <li>Personal details such as name, email address, and phone number</li>
+                                <li>Resume content such as education history, work experience, and skills</li>
+                                <li>Any additional information you provide while using our service</li>
+                            </ul>
+                        </p>
+
+                        <h4>How We Use Your Information</h4>
+                        <p>
+                            We use the information we collect in the following ways:
+                            <ul>
+                                <li>To generate and store your resume</li>
+                                <li>To personalize your experience</li>
+                                <li>To improve our services and website functionality</li>
+                            </ul>
+                        </p>
+
+                        <h4>Sharing Your Information</h4>
+                        <p>
+                            We do not share your personal information with any third parties except:
+                            <ul>
+                                <li>If required by law or legal processes</li>
+                                <li>To protect our rights and services</li>
+                            </ul>
+                        </p>
+
+                        <h4>Your Data Rights</h4>
+                        <p>
+                            You have the right to access, modify, and delete your personal data at any time. 
+                            You can contact us via email to make any requests regarding your data.
+                        </p>
+
+                        <h4>Changes to This Policy</h4>
+                        <p>
+                            We may update this privacy policy from time to time. Please review this page regularly for any changes.
+                        </p>
+
+                        <h4>Contact Us</h4>
+                        <p>
+                            If you have any questions about our privacy policy, please contact us at privacy@resumegenerator.com.
+                        </p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="text-center">
+                        <button class="btn btn-primary me-2" onclick="acceptPolicy()">I Agree</button>
+                        <button class="btn btn-danger" onclick="declinePolicy()">I Disagree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="../static/plugins/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for button actions -->
+    <script>
+        function acceptPolicy() {
+            // 跳转到 index.html 页面
+            window.location.href = "../index.html";
+        }
+
+        function declinePolicy() {
+            alert("You have disagreed with the privacy policy.");
+            // 在这里可以执行用户不同意后的逻辑
+            setTimeout(function() {
+                window.location.href = "404.html";
+             }, 1000); // 1000 毫秒（1 秒）
+        }
+    </script>
+</body>
+</html>
