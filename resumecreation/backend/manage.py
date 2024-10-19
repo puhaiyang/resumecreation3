@@ -22,6 +22,7 @@ def main():
 > python manage.py makemigrations CVBuilder
 > python manage.py migrate
 > python manage.py runserver
+> python manage.py runserver [::]:8000
 > python manage.py createsuperuser
 > http://127.0.0.1:8000/admin/
 > http://127.0.0.1:8000/api/admin/users/
