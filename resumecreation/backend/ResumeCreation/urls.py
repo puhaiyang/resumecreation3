@@ -16,15 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from CVBuilder.views import register_user, CustomTokenObtainPairView, check_auth, logout_user, create_resume, \
-    get_all_resumes, update_resume, delete_resume, get_all_templates, get_template_details, get_all_users, delete_user, \
-    delete_templates
-
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
     TokenVerifyView,
 )
+
+from CVBuilder.views import register_user, check_auth, logout_user, create_resume, \
+    get_all_resumes, update_resume, delete_resume, get_all_templates, get_template_details, get_all_users, delete_user, \
+    delete_templates, CustomTokenObtainPairViewEmail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,7 +36,7 @@ urlpatterns = [
 
     # user managements
     path('api/register/', register_user, name='register_user'),
-    path('api/login/', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/login/', CustomTokenObtainPairViewEmail.as_view(), name='token_obtain_pair'),
     path('api/check-auth/', check_auth, name='check_auth'),
     path('api/logout/', logout_user, name='logout_user'),
 

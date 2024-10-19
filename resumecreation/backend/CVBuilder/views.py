@@ -7,7 +7,11 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .models import Resume, Template, User
-from .serializers import ResumeSerializer, TemplateSerializer, UserWithDataSerializer
+from .serializers import ResumeSerializer, TemplateSerializer, UserWithDataSerializer, CustomTokenObtainPairSerializer
+
+
+class CustomTokenObtainPairViewEmail(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
 
 
 # user api
@@ -17,6 +21,8 @@ def register_user(request):
     data = request.data
     if User.objects.filter(username=data.get('username')).exists():
         return Response({'error': 'Username already exists'}, status=status.HTTP_400_BAD_REQUEST)
+    if User.objects.filter(email=data.get('email')).exists():
+        return Response({'error': 'email already exists'}, status=status.HTTP_400_BAD_REQUEST)
 
     user = User.objects.create_user(username=data.get('username'), email=data.get('email'),
                                     password=data.get('password'))
